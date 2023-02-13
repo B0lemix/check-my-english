@@ -1,20 +1,17 @@
 <script>
-  import {isValidInput} from './store.js'
-  import {checkIsEnglish} from '../services/ia.js'
-  const handleChange= async (e) =>{
-    console.log(e.target.value);
-    const {value}=e.target
-    const isValid = value.length>0
-    if (!isValid){ 
-      isValidInput.set(false)
-      return
-  }
+  import { isValidInput } from "./store.js";
+  import { checkIsEnglish } from "../services/ia.js";
+  const handleChange = async (e) => {
+    const { value } = e.target;
+    const isValid = value.length > 0;
+    if (!isValid) {
+      isValidInput.set(false);
+      return;
+    }
 
-    const isEnglish= await checkIsEnglish(value)
-    isValidInput.set(isEnglish)
-
-  }
-    
+    const isEnglish = await checkIsEnglish(value);
+    isValidInput.set(isEnglish);
+  };
 </script>
 
 <textarea
@@ -25,6 +22,4 @@
   name="result"
   rows="5"
   cols="40"
-  
->
-</textarea>
+/>

@@ -1,5 +1,5 @@
 <script>
-  import {isValidInput} from './store.js'
+  import { isValidInput } from "./store.js";
   import { checkMyEnglish } from "../services/ia.js";
   import Loading from "./icons/Loading.svelte";
   import Upload from "./icons/Upload.svelte";
@@ -16,11 +16,12 @@
   };
 </script>
 
-
 {#if !$isValidInput}
-<strong class="text-red-800">You are not using english or text is too short. Please input should be in english.</strong>
+  <strong class="text-red-800"
+    >You are not using english or text is too short. Please input should be in
+    english.</strong
+  >
 {/if}
-
 
 {#if promise === null}
   <button
@@ -28,7 +29,7 @@
     disabled={!$isValidInput}
     type="button"
     class={`py-2 px-4 flex justify-center items-center  bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ${
-      !$isValidInput ? 'pointer-events-none opacity-30' : ""
+      !$isValidInput ? "pointer-events-none opacity-30" : ""
     }`}
   >
     <Upload />

@@ -65,7 +65,6 @@ export async function checkMyEnglish(input) {
     .replace('--', '')
     .trim()
     .slice(1,-1);
-  console.log(cleanText);
     return cleanText
 
     
