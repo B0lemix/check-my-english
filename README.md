@@ -9,11 +9,12 @@ If a input is in English, the AI read the user input and fix it in correctly Eng
 
 ## 🚀 Project Description
 
-This project is made using the following tools:
-    -**Svelte**: To build functional UI components.
+This project is made using the following tools:  
 
-    -**AstroJS**: Allow static loading and component optimization improvements.
+    - **Svelte**: To build functional UI components.  
 
-    -**Tailwind**: Used to give components a nice visual style.
+    - **AstroJS**: Allow static loading and component optimization improvements.   
+    
+    - **Tailwind**: Used to give components a nice visual style.
 
 
