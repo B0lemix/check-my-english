@@ -1,14 +1,19 @@
 # Check my English AI!
 
-```
 
-```
+> 🧑‍🚀 **How it works** 
+Input a sentece , the app recognices if the input language is not English, show a error message. 
 
-> 🧑‍🚀 **How it works** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+If a input is in English, the AI read the user input and fix it in correctly English.
 
 
 ## 🚀 Project Description
+
+This project is made using the following tools:
+    -**Svelte**: To build functional UI components.
+
+    -**AstroJS**: Allow static loading and component optimization improvements.
+
+    -**Tailwind**: Used to give components a nice visual style.
 
 
