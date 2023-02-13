@@ -1,0 +1,29 @@
+---
+import ButtonReset from "../components/ButtonReset.svelte";
+import ButtonSubmit from "../components/ButtonSubmit.svelte";
+import Textarea from "../components/Textarea.svelte";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="container max-w-lg m-auto flex flex-col">
+    <header class="py-4">
+      <h1 class="text-5xl font-medium ">
+       Check your <p class="animate-pulse inline-block font-bold text-red-500">English</p>
+      </h1>
+
+    </header>
+
+
+
+    <div class="py-5 gap-4 flex flex-col">
+		<Textarea  client:visible/>
+		<ButtonSubmit client:visible />
+		<ButtonReset client:visible />
+    </div>
+  </main>
+</Layout>
+
+
+<style>
+</style>
